@@ -17,10 +17,20 @@ const app = new Clarifai.App({
 const particlesOptions = {
     particles: {
         number: {
-            value: 30,
+            value: 120,
             density: {
                 enable: true,
                 value_area: 800
+            }
+        },
+        opacity: {
+            value: 0.4,
+            random: false,
+            anim:{
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
             }
         }
     }
@@ -87,7 +97,7 @@ class App extends Component {
     }
 
     onRouteChange = (route) => {
-        this.setState({route: 'home'});
+        this.setState({route: route});
     }
 
     render() {
@@ -112,7 +122,7 @@ class App extends Component {
                         <FaceRecognition box={box} imageUrl={imageUrl} />
                     </div>
                     : (
-                        route === 'signin'
+                        route === 'signin'   /* if equal return signin form otherwise return register form*/
                             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
                     )
