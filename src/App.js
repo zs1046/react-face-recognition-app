@@ -86,7 +86,7 @@ class App extends Component {
         this.setState({input: event.target.value});
     }
 
-    onPictureSubmit = () => {
+    onButtonSubmit = () => {
         this.setState({imageUrl: this.state.input});
         app.models
             .predict(
@@ -138,7 +138,7 @@ class App extends Component {
                         />
                         <ImageLinkForm
                             onInputChange={this.onInputChange}
-                            onPictureSubmit={this.onPictureSubmit}
+                            onButtonSubmit={this.onButtonSubmit}
                         />
                         <FaceRecognition box={box} imageUrl={imageUrl} />
                     </div>
