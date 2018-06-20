@@ -12,20 +12,10 @@ import './App.css';
 const particlesOptions = {
     particles: {
         number: {
-            value: 12,
+            value: 30,
             density: {
                 enable: true,
-                value_area: 100
-            }
-        },
-        opacity: {
-            value: 0.4,
-            random: false,
-            anim:{
-                enable: false,
-                speed: 1,
-                opacity_min: 0.1,
-                sync: false
+                value_area: 800
             }
         }
     }
