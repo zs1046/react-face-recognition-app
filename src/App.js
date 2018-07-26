@@ -70,7 +70,7 @@ class App extends Component {
         this.setState({box: box});
     }
 
-    /* This is listening for input into the text box */}
+    /* This is listening for input into the text box */
     onInputChange = (event) => {
         this.setState({input: event.target.value});
     }
