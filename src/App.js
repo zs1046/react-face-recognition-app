@@ -115,7 +115,7 @@ class App extends Component {
         this.setState({route: route});
     }
 
-    {/*  The following is JSX */}
+    /*  The following is JSX */
     render() { 
         {/* Destructuring to clean up code */}
         const { isSignedIn, imageUrl, route, box } = this.state;
