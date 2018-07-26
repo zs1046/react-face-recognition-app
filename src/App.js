@@ -70,11 +70,11 @@ class App extends Component {
         this.setState({box: box});
     }
 
-    {/* This is listening for input into the text box */}
+    /* This is listening for input into the text box */}
     onInputChange = (event) => {
         this.setState({input: event.target.value});
     }
-    {/* when submit button is hit, it takes the text from the text box and sends the image to the database waits for response */}
+    /* when submit button is hit, it takes the text from the text box and sends the image to the database waits for response */
     onButtonSubmit = () => {
         this.setState({imageUrl: this.state.input});
         fetch('https://evening-bastion-28570.herokuapp.com/imageurl', {
