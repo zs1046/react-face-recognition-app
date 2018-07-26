@@ -114,9 +114,11 @@ class App extends Component {
         this.setState({route: route});
     }
 
-    
+    //  The following is JSX
     render() {
+        {/* Destructuring to clean up code */}
         const { isSignedIn, imageUrl, route, box } = this.state;
+        {/* return can only return one element */}
         return (
             <div className="App">
                 <Particles className='particles'
@@ -147,4 +149,5 @@ class App extends Component {
     }
 }
 
+// Export default Means that we are exporting one thing, that is the App.
 export default App;
