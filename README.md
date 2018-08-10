@@ -6,7 +6,7 @@ This application uses the PERN stack and uses an API from Clarifai to detect fac
 
 ![FaceApp](FaceApp.png)
 
-##Work needed
+## Work needed
 - Add detection for multiple faces
 - Fix background
 
