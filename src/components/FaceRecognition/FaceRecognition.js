@@ -1,8 +1,6 @@
 import React from 'react';
 import './FaceRecognition.css';
 
-//simple component with no state, a pure function
-//This function will print out the picture for the link that was submitted with a box around the detecteed face.
 const FaceRecognition = ({ imageUrl, box }) => {
     return (
         <div className='center ma'>
