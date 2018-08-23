@@ -10,4 +10,5 @@ This application uses the PERN stack and uses an API from Clarifai to detect fac
 ## Work needed
 - Add detection for multiple faces
 - Fix background
+- Face detection broke for some reason
 
