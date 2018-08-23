@@ -1,7 +1,6 @@
 import React from 'react';
 import './FaceRecognition.css';
 
-//simple component with no state, a pure function
 const FaceRecognition = ({ imageUrl, box }) => {
     return (
         <div className='center ma'>
