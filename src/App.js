@@ -52,7 +52,7 @@ class App extends Component {
                 joined: data.joined
             }})
     }
-    /* this function calculates the face detection box, from the outputs given to us from the API */
+
     calculateFaceLocation = (data) => {
         const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
         const image = document.getElementById('inputimage');
@@ -70,11 +70,10 @@ class App extends Component {
         this.setState({box: box});
     }
 
-    /* This is listening for input into the text box */
     onInputChange = (event) => {
         this.setState({input: event.target.value});
     }
-    /* when submit button is hit, it takes the text from the text box and sends the image to the database waits for response */
+
     onButtonSubmit = () => {
         this.setState({imageUrl: this.state.input});
         fetch('https://evening-bastion-28570.herokuapp.com/imageurl', {
@@ -115,11 +114,9 @@ class App extends Component {
         this.setState({route: route});
     }
 
-
-    render() { 
-        {/* Destructuring to clean up code */}
+    
+    render() {
         const { isSignedIn, imageUrl, route, box } = this.state;
-        {/* return can only return one element */}
         return (
             <div className="App">
                 <Particles className='particles'
@@ -150,6 +147,4 @@ class App extends Component {
     }
 }
 
-
-// Export default Means that we are exporting one thing, that is the App.
 export default App;
